@@ -52,7 +52,8 @@ namespace FoodDiaryBeta
 
             Entry entry = this.entries[position];
             view.FindViewById<TextView>(Resource.Id.Description).Text = entry.Description;
-            view.FindViewById<TextView>(Resource.Id.EntryId).Text = entry.EntryId.ToString();
+            view.FindViewById<TextView>(Resource.Id.Quantity).Text = entry.Quantity.ToString();
+            view.FindViewById<TextView>(Resource.Id.entryDate).Text = entry.EntryDate.ToShortTimeString();
 
             //example from https://developer.xamarin.com/guides/android/user_interface/working_with_listviews_and_adapters/part_2_-_populating_a_listview_with_data/
             //var view = (convertView ??

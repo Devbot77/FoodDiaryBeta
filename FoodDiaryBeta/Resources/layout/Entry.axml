@@ -27,10 +27,16 @@
           android:text="Event Entry"
           android:id="@+id/eventRadioButton" />
     </RadioGroup>
-    <DatePicker
+    <TextView
+        android:text="Time"
         android:layout_width="match_parent"
-        android:layout_height="90.5dp"
-        android:id="@+id/datePicker1" />
+        android:layout_height="wrap_content"
+        android:id="@+id/timeDisplay" />
+    <Button
+        android:text="Change Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeButton" />
     <TextView
         android:text="Description"
         android:layout_width="match_parent"

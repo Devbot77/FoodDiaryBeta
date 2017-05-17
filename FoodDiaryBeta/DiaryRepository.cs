@@ -42,7 +42,8 @@ namespace FoodDiaryBeta
         public async Task<List<Entry>> GetEntriesByDate(int dateId)
         {
             // grab entries of specific date?
-            return await db.Table<Entry>().Where(e => e.EntryDateId == dateId).ToListAsync();
+            //return await db.Table<Entry>().Where(e => e.EntryDateId == dateId).ToListAsync();
+            return await db.Table<Entry>().Where(e => e.EntryDateId == dateId).OrderBy( e => e.EntryDate).ToListAsync();
         }
 
         // returns a string array for use with diary listview

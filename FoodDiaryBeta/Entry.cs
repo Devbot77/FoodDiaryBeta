@@ -18,7 +18,7 @@ namespace FoodDiaryBeta
         [PrimaryKey, AutoIncrement]
         public int EntryId { get; set; }
         //public string EntryDate { get; set; }
-        //public DateTime EntryDate { get; set; }
+        public DateTime EntryDate { get; set; }
         public int EntryDateId { get; set; }
         public string Description { get; set; }
         public int Quantity { get; set; }
