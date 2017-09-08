@@ -41,7 +41,8 @@ namespace FoodDiaryBeta
 
         private void analysisButton_Click(object sender, EventArgs e)
         {
-
+            var analysisIntent = new Intent(this, typeof(AnalysisActivity));
+            StartActivity(analysisIntent);
         }
     }
 }
